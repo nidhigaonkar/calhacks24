@@ -47,6 +47,13 @@ def index() -> rx.Component:
                 #href="https://reflex.dev/docs/getting-started/introduction/",
                 #is_external=True,
             #),
+            rx.button("Get Started", on_click=State.button_click, style={
+                "padding": "10px 20px",
+                "backgroundColor": "blue",
+                "color": "white",
+                "borderRadius": "5px",
+                "margin": "10px"
+            }),
             spacing="5",
             justify="center",
             min_height="85vh",
