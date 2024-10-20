@@ -69,15 +69,15 @@ def index() -> rx.Component:
     rx.button(
     "Learn!", style={
         "position": "absolute",  # Allows you to set coordinates
-        "top": "500px",          # Distance from the top of the container
-        "left": "550px",         # Distance from the left of the container
+        "top": "550px",          # Distance from the top of the container
+        "left": "800px",         # Distance from the left of the container
         "zIndex": "10",          # Ensures it appears above other elements if necessary
         "width": "250px",        # Set the width of the button
         "height": "75px",        # Set the height of the button
         "padding": "15px",       # Adds padding inside the button to increase its size
         "fontSize": "65px",      # Increases the font size for better readability
     }),
-    href="https://www.hume.ai",
+    href="https://platform.hume.ai/evi/playground?configId=b27e6df8-a293-46ef-a6bd-107e5789a8b6",
     is_external=True
 ),
             #rx.button("Get Started", on_click=State.button_click, style={
