@@ -10,6 +10,29 @@ class State(rx.State):
 
     ...
 
+#import asyncio
+##import base64
+#import datetime
+#import os
+#from dotenv import load_dotenv
+#from hume.client import AsyncHumeClient
+#from hume.empathic_voice.chat.socket_client import ChatConnectOptions, ChatWebsocketConnection
+#from hume.empathic_voice.chat.types import SubscribeEvent
+#from hume.empathic_voice.types import UserInput
+#from hume.core.api_error import ApiError
+#from hume import MicrophoneInterface, Stream
+
+def ask_question(question: str):
+    # This function sends the question to Hume's API and returns the voice response
+    # You'll need to handle this with an API call to Hume
+    # This is a placeholder implementation
+    response = send_question_to_hume(question)
+    return response
+
+def send_question_to_hume(question: str):
+    # Implement your call to Hume's API here
+    # Send `question` and return a response
+    pass
 
 def index() -> rx.Component:
     # Welcome Page (Index)
@@ -42,18 +65,18 @@ def index() -> rx.Component:
                 #rx.code(f"{config.app_name}/{config.app_name}.py"),
                 #size="5",
             #),
-            #rx.link(
-                #rx.button("Check out our docs!"),
-                #href="https://reflex.dev/docs/getting-started/introduction/",
-                #is_external=True,
-            #),
-            rx.button("Get Started", on_click=State.button_click, style={
-                "padding": "10px 20px",
-                "backgroundColor": "blue",
-                "color": "white",
-                "borderRadius": "5px",
-                "margin": "10px"
-            }),
+            rx.link(
+                rx.button("Hume!"),
+                href="https://www.hume.ai",
+                is_external=True,
+            ),
+            #rx.button("Get Started", on_click=State.button_click, style={
+                #"padding": "10px 20px",
+                #"backgroundColor": "blue",
+                #"color": "white",
+                #"borderRadius": "5px",
+                #"margin": "10px"
+            #}),
             spacing="5",
             justify="center",
             min_height="85vh",
