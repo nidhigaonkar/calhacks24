@@ -46,7 +46,7 @@ def index() -> rx.Component:
                 "width": "170px",        # Image width
                 "height": "170px"        # Image height
             }),
-            rx.image(src="/wai.png", style={
+            rx.image(src="/ws.png", style={
                 "position": "absolute",  # Allows you to set exact coordinates
                 "top": "550px",          # Distance from the top of the container
                 "right": "275px",          # Distance from the left of the container
@@ -66,10 +66,20 @@ def index() -> rx.Component:
                 #size="5",
             #),
             rx.link(
-                rx.button("Hume!"),
-                href="https://www.hume.ai",
-                is_external=True,
-            ),
+    rx.button(
+    "Learn!", style={
+        "position": "absolute",  # Allows you to set coordinates
+        "top": "500px",          # Distance from the top of the container
+        "left": "550px",         # Distance from the left of the container
+        "zIndex": "10",          # Ensures it appears above other elements if necessary
+        "width": "250px",        # Set the width of the button
+        "height": "75px",        # Set the height of the button
+        "padding": "15px",       # Adds padding inside the button to increase its size
+        "fontSize": "65px",      # Increases the font size for better readability
+    }),
+    href="https://www.hume.ai",
+    is_external=True
+),
             #rx.button("Get Started", on_click=State.button_click, style={
                 #"padding": "10px 20px",
                 #"backgroundColor": "blue",
